@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit and reset</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: rebeccapurple;
+        }
+
+        .forms {
+            display: grid;
+            grid-template-columns: 100px 150px;
+            /* grid-template-rows:  */
+            grid-gap: 1rem;
+            width: 20%;
+            
+
+
+        }
+
+        .rform {
+            padding-top: 20%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            /* background: rebeccapurple; */
+            height: 100%;
+
+        }
+
+        form {
+            border: 1px solid rgb(110, 137, 226);
+            padding: 10px;
+            background-color: aqua;
+        }
+
+        input {
+            /* margin: 5px; */
+        }
+
+        input[type='reset'],
+        input[type='submit'] {
+            background: rebeccapurple;
+            position: relative;
+            left: 60px;
+            color: aliceblue;
+            padding: 5px;
+            width: 100px;
+            border: solid 1px white;
+            border-radius: 5px;
+        }
+
+        input[type='submit'] {
+
+            grid-column: 1;
+            grid-row: 4;
+        }
+    </style>
+    </body>
+
+
+
+</head>
+
+<body>
+    <div class="rform">
+        <form class="forms">
+            <label>username</label>
+            <input type="text" placeholder="enter username">
+            <label>password</label>
+            <input type="text" placeholder="enter password">
+
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
